@@ -8,24 +8,19 @@ data = {'Nama': ['John', 'Jane', 'Bob', 'Alice'],
 
 df = pd.DataFrame(data)
 
-# Hitung peningkatan gaji sebesar 5% untuk setiap karyawan menggunakan loop for dan lambda
 for index, row in df.iterrows():
     df.at[index, 'Gaji'] = (lambda x: x + x * 0.05)(row['Gaji'])
 
-# Tampilkan DataFrame yang sudah diperbarui
 print("DataFrame setelah peningkatan gaji 5%:")
 print(df)
 
-# Berikan peningkatan tambahan sebesar 2% untuk karyawan yang usianya di atas 30
 for index, row in df.iterrows():
     if row['Usia'] > 30:
         df.at[index, 'Gaji'] = (lambda x: x + x * 0.02)(row['Gaji'])
 
-# Tampilkan DataFrame yang sudah diperbarui setelah peningkatan gaji tambahan
 print("\nDataFrame setelah peningkatan gaji tambahan 2% untuk usia di atas 30:")
 print(df)
 
-# Ringkasan hasil
 total_peningkatan_5_percent = sum(df['Gaji'] * 0.05)
 print("\nRingkasan Perubahan:")
 print("Total Karyawan: ", len(df))
