@@ -29,16 +29,3 @@ print("\nRingkasan Perubahan:")
 print("Total Karyawan: ", len(df))
 print("Total Peningkatan Gaji 5%: ", total_peningkatan_5_percent)
 
-
-
-# ---------------------------- #
-# Buat Branch Baru pada repository github berikut dengan format KELAS_NRP_NAMA
-# https://github.com/diashfirdaus-cyber/Pemdas_Itenas.git
-# ---------------------------- #
-
-# Catatan:
-
-# Gunakan loop for dan fungsi lambda untuk mengimplementasikan operasi yang diminta.
-# Pastikan untuk menyimpan hasil perubahan pada DataFrame.
-# Tampilkan hasil dan ringkasan dengan jelas.
-# Jangan lupa untuk menyesuaikan persentase peningkatan gaji sesuai dengan cerita.
